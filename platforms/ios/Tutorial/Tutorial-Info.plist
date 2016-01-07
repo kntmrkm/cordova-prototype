@@ -68,6 +68,16 @@
     <dict>
       <key>NSAllowsArbitraryLoads</key>
       <true/>
+      <key>NSExceptionDomains</key>
+      <dict>
+        <key>cordova-rails.herokuapp.com</key>
+        <dict/>
+        <key>lvh.me</key>
+        <dict>
+          <key>NSExceptionAllowsInsecureHTTPLoads</key>
+          <true/>
+        </dict>
+      </dict>
     </dict>
     <key>NSMainNibFile~ipad</key>
     <string/>

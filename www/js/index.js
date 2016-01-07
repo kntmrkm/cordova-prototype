@@ -50,8 +50,8 @@ var app = {
 };*/
 
 var settings = {
-  appURL: 'http://lvh.me:3000/',
-  //appURL: 'https://cordova-rails.herokuapp.com/',
+  //appURL: 'http://lvh.me:3000/',
+  appURL: 'https://cordova-rails.herokuapp.com/',
 };
 
 var app = {

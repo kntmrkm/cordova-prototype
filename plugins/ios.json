@@ -18,6 +18,9 @@
         },
         "cordova-plugin-inappbrowser": {
             "PACKAGE_NAME": "com.kntmrkm.tutorial"
+        },
+        "cordova-plugin-livereload": {
+            "PACKAGE_NAME": "com.kntmrkm.tutorial"
         }
     },
     "dependent_plugins": {}

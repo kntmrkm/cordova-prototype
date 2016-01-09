@@ -50,8 +50,8 @@ var app = {
 };*/
 
 var settings = {
-  //host: 'http://lvh.me:3000/',
-  host: 'https://cordova-rails.herokuapp.com/',
+  //appURL: 'http://lvh.me:3000/',
+  appURL: 'https://cordova-rails.herokuapp.com/',
 };
 
 var app = {
@@ -92,16 +92,17 @@ var app = {
   },
   openMainApp: function() {
     var encodedHref = encodeURIComponent(window.location.href);
-    var ref = window.open(settings.host + "?apphome=" + encodedHref, '_self', 'location=yes');
-    //var ref = window.open("http://lvh.me:3000/?apphome=" + encodedHref, '_blank', 'location=yes');
+    var appURL = settings.appURL + 'relay_ios?' + [ 'apphome='+encodedHref, 'from=ios'].join('&');
+    var ref = window.open(appURL, '_self', 'location=yes');
+    
   },
   signInProc: function(){
     //clearcache=noでアプリのWebViewとセッション共有
-    var ref = window.open(settings.host + '/users/sign_in', '_blank', 'location=yes,clearcache=no');
+    var ref = window.open(settings.appURL + '/users/sign_in', '_blank', 'location=yes,clearcache=no');
     ref.addEventListener("loadstop", function(e) {
       // new RegExp(val, 'g')
       //if(e.url.match(/profile/)) {
-      if(e.url.match(new RegExp('^' + settings.host + 'profile', 'im'))) {  
+      if(e.url.match(new RegExp('^' + settings.appURL + 'profile', 'im'))) {  
         alert(e.url);
         ref.close();
       }

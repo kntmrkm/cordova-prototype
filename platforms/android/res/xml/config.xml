@@ -20,11 +20,13 @@
         Apache Cordova Team
     </author>
     <content src="index.html" />
-    <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <allow-intent href="tel:*" />
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
+    <access origin="https://cordova-rails.herokuapp.com" />
+    <access origin="http://lvh.me" />
+    <preference name="keepRunning" value="false" />
 </widget>

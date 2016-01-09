@@ -30,4 +30,6 @@
     </feature>
     <access origin="https://cordova-rails.herokuapp.com" />
     <access origin="http://lvh.me" />
+    <!-- background処理停止 -->
+    <preference name="keepRunning" value="false" />
 </widget>

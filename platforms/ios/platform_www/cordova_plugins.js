@@ -40,7 +40,8 @@ module.exports.metadata =
     "cordova-plugin-whitelist": "1.2.0",
     "cordova-plugin-device": "1.1.0",
     "cordova-plugin-console": "1.0.2",
-    "cordova-plugin-inappbrowser": "1.1.1"
+    "cordova-plugin-inappbrowser": "1.1.1",
+    "cordova-plugin-livereload": "1.0.0-dev"
 }
 // BOTTOM OF METADATA
 });

@@ -41,4 +41,5 @@
     <allow-intent href="geo:*" />
     <access origin="https://cordova-rails.herokuapp.com" />
     <access origin="http://lvh.me" />
+    <preference name="keepRunning" value="false" />
 </widget>

@@ -29,6 +29,9 @@
         },
         "cordova-plugin-inappbrowser": {
             "PACKAGE_NAME": "com.kntmrkm.tutorial"
+        },
+        "cordova-plugin-livereload": {
+            "PACKAGE_NAME": "com.kntmrkm.tutorial"
         }
     },
     "dependent_plugins": {},
@@ -69,6 +72,7 @@
         "cordova-plugin-whitelist": "1.2.0",
         "cordova-plugin-device": "1.1.0",
         "cordova-plugin-console": "1.0.2",
-        "cordova-plugin-inappbrowser": "1.1.1"
+        "cordova-plugin-inappbrowser": "1.1.1",
+        "cordova-plugin-livereload": "1.0.0-dev"
     }
 }
